@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jessica Lagioia · Salão de Beleza no Boqueirão, Praia Grande</title>
+<meta name="description" content="Salão de beleza no Boqueirão, Praia Grande. Progressiva, alisamento, corte, hidratação e mais. Nota 4,8 com mais de mil avaliações no Google. Agende pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2a1f1d;--muted:#6f625d;--bg:#fbf7f3;--card:#fff;--rose:#b7766a;--rose-d:#8f5449;--sand:#efe4da;--wa:#1faa59}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Manrope,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.preview{background:var(--ink);color:#f4ebe4;font-size:13px;text-align:center;padding:8px 16px}
+header{position:sticky;top:0;z-index:10;background:rgba(251,247,243,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--sand)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:26px;font-weight:600;letter-spacing:.5px;text-decoration:none}
+.logo small{display:block;font-family:Manrope;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-top:-6px}
+.nav ul{display:flex;gap:28px;list-style:none;font-size:14px;font-weight:500}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--wa);color:#fff;text-decoration:none;font-weight:600;padding:13px 22px;border-radius:999px;font-size:15px;transition:transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn svg{width:18px;height:18px;fill:currentColor}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-top:64px;padding-bottom:72px}
+.eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--rose-d);font-weight:600}
+h1{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(40px,6vw,64px);line-height:1.05;margin:14px 0 18px}
+h1 em{color:var(--rose)}
+.lead{color:var(--muted);font-size:17px;max-width:460px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 24px}
+.rating{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--muted)}
+.stars{color:#e0a43b;letter-spacing:2px;font-size:16px}
+.rating b{color:var(--ink)}
+.hero-img{position:relative;aspect-ratio:4/5;border-radius:200px 200px 24px 24px;overflow:hidden;background:var(--sand)}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;left:-18px;bottom:28px;background:var(--card);border-radius:16px;padding:14px 18px;box-shadow:0 10px 30px rgba(42,31,29,.12);font-size:13px}
+.badge b{display:block;font-family:"Cormorant Garamond",serif;font-size:30px;line-height:1}
+section{padding:72px 0}
+h2{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(32px,4.5vw,44px);line-height:1.1;margin:10px 0 14px}
+.sub{color:var(--muted);max-width:540px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.svc{background:var(--card);border:1px solid var(--sand);border-radius:20px;padding:26px}
+.svc .ic{width:44px;height:44px;border-radius:12px;background:var(--sand);display:grid;place-items:center;font-size:20px;margin-bottom:14px}
+.svc h3{font-size:18px;margin-bottom:6px}
+.svc p{color:var(--muted);font-size:14px}
+.svc a{display:inline-block;margin-top:12px;font-size:14px;font-weight:600;color:var(--rose-d);text-decoration:none}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:12px;margin-top:36px}
+.gallery div{border-radius:16px;overflow:hidden;background:var(--sand)}
+.gallery div:nth-child(1){grid-row:span 2}
+.gallery div:nth-child(4){grid-column:span 2}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.gallery div:hover img{transform:scale(1.04)}
+.proof{background:var(--ink);color:#f4ebe4;border-radius:28px;padding:56px;display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center}
+.proof .big{font-family:"Cormorant Garamond",serif;font-size:96px;line-height:.9}
+.proof p{color:#cdbfb7;max-width:520px}
+.proof a{color:#fff;font-weight:600}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:36px}
+.info{background:var(--card);border:1px solid var(--sand);border-radius:20px;padding:30px}
+.info dt{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--rose-d);font-weight:600;margin-top:18px}
+.info dt:first-child{margin-top:0}
+.info dd{font-size:16px}
+.map{border-radius:20px;overflow:hidden;min-height:320px;border:1px solid var(--sand)}
+.map iframe{width:100%;height:100%;min-height:320px;border:0}
+.final{text-align:center}
+.final .cta{justify-content:center}
+footer{border-top:1px solid var(--sand);padding:28px 0;font-size:13px;color:var(--muted);text-align:center}
+.float{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 8px 24px rgba(31,170,89,.4);z-index:20}
+.float svg{width:30px;height:30px;fill:#fff}
+@media(max-width:860px){
+.nav ul{display:none}
+.hero{grid-template-columns:1fr;padding-top:36px;padding-bottom:48px;gap:36px}
+.logo{font-size:22px}.logo small{letter-spacing:1.5px}
+.nav .btn{padding:10px 16px;font-size:14px}
+.hero-img{max-width:420px;margin:0 auto;width:100%}
+.badge{left:12px}
+.services{grid-template-columns:1fr}
+.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}
+.gallery div:nth-child(4){grid-column:span 1}
+.proof{grid-template-columns:1fr;padding:36px;gap:16px}
+.proof .big{font-size:72px}
+.visit{grid-template-columns:1fr}
+section{padding:52px 0}
+}
+</style>
+</head>
+<body>
+<div class="preview">Prévia do site · fotos ilustrativas, que serão trocadas pelas fotos reais do salão</div>
+<header>
+<div class="wrap nav">
+<a class="logo" href="#">Jessica Lagioia<small>Boqueirão · Praia Grande</small></a>
+<ul>
+<li><a href="#servicos">Serviços</a></li>
+<li><a href="#trabalhos">Trabalhos</a></li>
+<li><a href="#visite">Como chegar</a></li>
+</ul>
+<a class="btn" href="https://wa.me/5513991539138?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 0 1-1.7-.6 13.3 13.3 0 0 1-5.1-4.5c-.4-.5-1-1.5-1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg>Agendar</a>
+</div>
+</header>
+<main>
+<div class="wrap hero">
+<div>
+<span class="eyebrow">Salão de beleza no Boqueirão</span>
+<h1>O seu momento de <em>cuidar de você</em>, pertinho da praia.</h1>
+<p class="lead">Progressiva, alisamento, corte e hidratação num ambiente acolhedor, com uma equipe que escuta o que você quer antes de começar.</p>
+<div class="cta">
+<a class="btn" href="https://wa.me/5513991539138?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 0 1-1.7-.6 13.3 13.3 0 0 1-5.1-4.5c-.4-.5-1-1.5-1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg>Agendar pelo WhatsApp</a>
+<a class="btn ghost" href="#servicos">Ver serviços</a>
+</div>
+<div class="rating"><span class="stars">★★★★★</span><span><b>4,8</b> · mais de 1.000 avaliações no Google</span></div>
+</div>
+<div class="hero-img">
+<img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=75" alt="Ambiente do salão">
+<div class="badge"><b>1.038</b>clientes avaliaram</div>
+</div>
+</div>
+<section id="servicos">
+<div class="wrap">
+<span class="eyebrow">Serviços</span>
+<h2>Tudo o que você precisa num lugar só</h2>
+<p class="sub">Escolha o serviço e chame a gente no WhatsApp: já respondemos com valores e horários disponíveis.</p>
+<div class="services">
+<div class="svc"><div class="ic">✨</div><h3>Progressiva</h3><p>Fios lisos, alinhados e com brilho por muito mais tempo, com avaliação do seu cabelo antes.</p><a href="https://wa.me/5513991539138?text=Ol%C3%A1!%20Quero%20saber%20sobre%20progressiva." target="_blank" rel="noopener">Consultar valores →</a></div>
+<div class="svc"><div class="ic">💫</div><h3>Alisamento</h3><p>Para quem quer o liso de verdade, com produto e técnica escolhidos pro seu tipo de fio.</p><a href="https://wa.me/5513991539138?text=Ol%C3%A1!%20Quero%20saber%20sobre%20alisamento." target="_blank" rel="noopener">Consultar valores →</a></div>
+<div class="svc"><div class="ic">✂️</div><h3>Corte</h3><p>Corte feminino pensado no seu rosto e na sua rotina, com finalização.</p><a href="https://wa.me/5513991539138?text=Ol%C3%A1!%20Quero%20saber%20sobre%20corte." target="_blank" rel="noopener">Consultar valores →</a></div>
+<div class="svc"><div class="ic">💧</div><h3>Hidratação</h3><p>Tratamento para devolver maciez, força e brilho aos fios.</p><a href="https://wa.me/5513991539138?text=Ol%C3%A1!%20Quero%20saber%20sobre%20hidrata%C3%A7%C3%A3o." target="_blank" rel="noopener">Consultar valores →</a></div>
+<div class="svc"><div class="ic">🎨</div><h3>Coloração e escova</h3><p>Cor, retoque de raiz, escova e penteados para o dia a dia ou ocasiões especiais.</p><a href="https://wa.me/5513991539138?text=Ol%C3%A1!%20Quero%20saber%20sobre%20colora%C3%A7%C3%A3o%20e%20escova." target="_blank" rel="noopener">Consultar valores →</a></div>
+<div class="svc"><div class="ic">💅</div><h3>Manicure e pedicure</h3><p>Unhas das mãos e dos pés feitas com capricho.</p><a href="https://wa.me/5513991539138?text=Ol%C3%A1!%20Quero%20saber%20sobre%20manicure%20e%20pedicure." target="_blank" rel="noopener">Consultar valores →</a></div>
+</div>
+</div>
+</section>
+<section id="trabalhos" style="padding-top:0">
+<div class="wrap">
+<span class="eyebrow">Trabalhos</span>
+<h2>Veja alguns resultados</h2>
+<p class="sub">Mais fotos no nosso Instagram e no perfil do Google.</p>
+<div class="gallery">
+<div><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=70" alt="Cabelo finalizado" loading="lazy"></div>
+<div><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=70" alt="Unhas" loading="lazy"></div>
+<div><img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=70" alt="Coloração" loading="lazy"></div>
+<div><img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=70" alt="Atendimento" loading="lazy"></div>
+<div><img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=70" alt="Penteado" loading="lazy"></div>
+<div><img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&w=600&q=70" alt="Escova" loading="lazy"></div>
+</div>
+</div>
+</section>
+<section style="padding-top:0">
+<div class="wrap">
+<div class="proof">
+<div class="big">4,8</div>
+<div>
+<h2 style="color:#fff;margin-top:0">Quem vem, recomenda</h2>
+<p>Mais de mil clientes já avaliaram o salão no Google, e a maioria das novas clientes chega por indicação. <a href="https://www.google.com/maps/place/Jessica+Lagioia+-+Boqueir%C3%A3o/data=!4m7!3m6!1s0x94ce1d6d96f98aeb:0x5bc4c8676a0e0825!8m2!3d-24.006058!4d-46.4131982!16s%2Fg%2F11vlcqt9cr!19sChIJ64r5lm0dzpQRJQgOamfIxFs" target="_blank" rel="noopener">Ler as avaliações no Google →</a></p>
+</div>
+</div>
+</div>
+</section>
+<section id="visite" style="padding-top:0">
+<div class="wrap">
+<span class="eyebrow">Visite</span>
+<h2>Como chegar</h2>
+<div class="visit">
+<dl class="info">
+<dt>Endereço</dt><dd>Av. Pres. Costa e Silva, 822<br>Boqueirão, Praia Grande - SP<br>CEP 11700-065</dd>
+<dt>WhatsApp</dt><dd><a href="https://wa.me/5513991539138" target="_blank" rel="noopener">(13) 99153-9138</a></dd>
+<dt>Horários</dt><dd>Consulte os horários disponíveis pelo WhatsApp</dd>
+</dl>
+<div class="map"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Av.+Pres.+Costa+e+Silva,+822+-+Boqueir%C3%A3o,+Praia+Grande+-+SP&output=embed" title="Mapa do salão"></iframe></div>
+</div>
+</div>
+</section>
+<section class="final" style="padding-top:0">
+<div class="wrap">
+<h2>Bora marcar o seu horário?</h2>
+<p class="sub" style="margin:0 auto">Chama a gente no WhatsApp e conta o que você quer fazer.</p>
+<div class="cta"><a class="btn" href="https://wa.me/5513991539138?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar pelo WhatsApp</a></div>
+</div>
+</section>
+</main>
+<footer>Jessica Lagioia · Salão de Beleza · Boqueirão, Praia Grande - SP</footer>
+<a class="float" href="https://wa.me/5513991539138?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 0 1-1.7-.6 13.3 13.3 0 0 1-5.1-4.5c-.4-.5-1-1.5-1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg></a>
+</body>
+  </html>
