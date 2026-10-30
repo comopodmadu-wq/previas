@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OusAr Ar Condicionados · Instalação e manutenção em São Vicente</title>
+<meta name="description" content="Instalação, manutenção e limpeza de ar-condicionado em São Vicente e região. Atendimento 24 horas, nota 5,0 no Google. Peça seu orçamento pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0d1b2a;--muted:#55657a;--bg:#f5f9fc;--card:#fff;--blue:#0a6cff;--blue-d:#0750c0;--ice:#e3f0ff;--line:#dde7f2;--wa:#1faa59}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.preview{background:var(--ink);color:#d8e6f5;font-size:13px;text-align:center;padding:8px 16px}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:Sora,sans-serif;font-weight:700;font-size:21px}
+.logo i{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--blue),#4fb3ff);display:grid;place-items:center;color:#fff;font-style:normal;font-size:18px}
+.logo small{display:block;font-family:Inter;font-weight:500;font-size:11px;color:var(--muted);letter-spacing:.5px}
+.nav ul{display:flex;gap:28px;list-style:none;font-size:14px;font-weight:500}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--wa);color:#fff;text-decoration:none;font-weight:600;padding:13px 22px;border-radius:12px;font-size:15px;transition:transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.ghost{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+.btn svg{width:18px;height:18px;fill:currentColor}
+.hero{background:linear-gradient(180deg,#fff 0%,var(--bg) 100%)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-top:64px;padding-bottom:72px}
+.tag{display:inline-flex;align-items:center;gap:8px;background:var(--ice);color:var(--blue-d);font-weight:600;font-size:13px;padding:6px 12px;border-radius:999px}
+.tag b{width:8px;height:8px;border-radius:50%;background:#22c55e;display:inline-block}
+h1{font-family:Sora,sans-serif;font-weight:700;font-size:clamp(34px,5.2vw,56px);line-height:1.08;margin:16px 0 16px;letter-spacing:-.5px}
+h1 span{color:var(--blue)}
+.lead{color:var(--muted);font-size:17px;max-width:500px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 26px}
+.trust{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+.trust div{display:flex;align-items:center;gap:8px}
+.trust strong{color:var(--ink)}
+.stars{color:#f5a524;letter-spacing:1px}
+.hero-img{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:4/4.4;background:var(--ice);box-shadow:0 30px 60px -30px rgba(10,108,255,.45)}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.float-card{position:absolute;left:16px;bottom:16px;right:16px;background:rgba(255,255,255,.95);border-radius:16px;padding:14px 16px;display:flex;gap:12px;align-items:center;font-size:14px}
+.float-card .ic{width:40px;height:40px;border-radius:12px;background:var(--ice);display:grid;place-items:center;font-size:20px;flex:none}
+section{padding:72px 0}
+.eyebrow{font-size:13px;font-weight:600;color:var(--blue);letter-spacing:1px;text-transform:uppercase}
+h2{font-family:Sora,sans-serif;font-weight:700;font-size:clamp(28px,3.8vw,40px);line-height:1.15;margin:10px 0 12px;letter-spacing:-.3px}
+.sub{color:var(--muted);max-width:560px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;transition:box-shadow .2s,border-color .2s}
+.svc:hover{border-color:#bcd6f5;box-shadow:0 14px 30px -18px rgba(10,108,255,.35)}
+.svc .ic{width:46px;height:46px;border-radius:12px;background:var(--ice);display:grid;place-items:center;font-size:22px;margin-bottom:14px}
+.svc h3{font-family:Sora,sans-serif;font-size:18px;margin-bottom:6px}
+.svc p{color:var(--muted);font-size:14.5px}
+.svc a{display:inline-block;margin-top:12px;font-size:14px;font-weight:600;color:var(--blue);text-decoration:none}
+.why{background:var(--ink);color:#e6eef7;border-radius:28px;padding:56px;display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center}
+.why h2{color:#fff;margin-top:6px}
+.why .eyebrow{color:#7cc0ff}
+.why p{color:#a9bccf}
+.why ul{list-style:none;display:grid;gap:14px}
+.why li{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:16px}
+.why li b{display:block;color:#fff;font-family:Sora,sans-serif;font-size:16px}
+.why li span{font-size:14px;color:#a9bccf}
+.why li i{font-style:normal;font-size:22px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px;counter-reset:s}
+.step{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;position:relative}
+.step:before{counter-increment:s;content:counter(s);position:absolute;top:22px;right:22px;font-family:Sora,sans-serif;font-weight:700;font-size:36px;color:var(--ice)}
+.step h3{font-family:Sora,sans-serif;font-size:17px;margin-bottom:6px}
+.step p{color:var(--muted);font-size:14.5px}
+.reviews{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:40px}
+.score{text-align:center}
+.score b{display:block;font-family:Sora,sans-serif;font-size:64px;line-height:1}
+.score small{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.chips span{background:var(--ice);color:var(--blue-d);font-weight:600;font-size:14px;padding:8px 14px;border-radius:999px}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:36px}
+.info{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+.info dt{font-size:12px;font-weight:600;color:var(--blue);letter-spacing:1px;text-transform:uppercase;margin-top:18px}
+.info dt:first-child{margin-top:0}
+.map{border-radius:18px;overflow:hidden;border:1px solid var(--line);min-height:300px}
+.map iframe{width:100%;height:100%;min-height:300px;border:0}
+.final{text-align:center;background:linear-gradient(135deg,var(--blue),#3aa0ff);color:#fff;border-radius:28px;padding:56px 24px}
+.final h2{color:#fff}
+.final p{color:#e3f0ff;max-width:520px;margin:0 auto}
+.final .cta{justify-content:center}
+.final .btn{background:#fff;color:var(--blue-d)}
+footer{padding:28px 0;font-size:13px;color:var(--muted);text-align:center}
+.fab{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 8px 24px rgba(31,170,89,.45);z-index:20}
+.fab svg{width:30px;height:30px;fill:#fff}
+@media(max-width:880px){
+.nav ul{display:none}
+.logo{font-size:18px}
+.nav .btn{padding:10px 14px;font-size:14px}
+.hero .wrap{grid-template-columns:1fr;padding-top:36px;padding-bottom:48px;gap:32px}
+.grid,.steps{grid-template-columns:1fr}
+.why{grid-template-columns:1fr;padding:32px 22px}
+.reviews{grid-template-columns:1fr;padding:28px;gap:16px;text-align:left}
+.score{text-align:left}
+.visit{grid-template-columns:1fr}
+section{padding:52px 0}
+}
+</style>
+</head>
+<body>
+<div class="preview">Prévia do site · fotos ilustrativas, que podem ser trocadas por fotos reais dos serviços</div>
+<header>
+<div class="wrap nav">
+<a class="logo" href="#"><i>❄</i><div>OusAr<small>Ar Condicionados · São Vicente</small></div></a>
+<ul>
+<li><a href="#servicos">Serviços</a></li>
+<li><a href="#como">Como funciona</a></li>
+<li><a href="#contato">Contato</a></li>
+</ul>
+<a class="btn" href="https://wa.me/5513991021229?text=Ol%C3%A1!%20Vi%20o%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 0 1-1.7-.6 13.3 13.3 0 0 1-5.1-4.5c-.4-.5-1-1.5-1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg>Orçamento</a>
+</div>
+</header>
+<main>
+<div class="hero">
+<div class="wrap">
+<div>
+<span class="tag"><b></b> Atendimento 24 horas</span>
+<h1>Ar-condicionado instalado <span>do jeito certo</span>, no horário combinado.</h1>
+<p class="lead">Instalação, manutenção e limpeza de ar-condicionado em São Vicente e região, com serviço caprichado e sem deixar sujeira pra trás.</p>
+<div class="cta">
+<a class="btn" href="https://wa.me/5513991021229?text=Ol%C3%A1!%20Vi%20o%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 0 1-1.7-.6 13.3 13.3 0 0 1-5.1-4.5c-.4-.5-1-1.5-1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg>Pedir orçamento no WhatsApp</a>
+<a class="btn ghost" href="#servicos">Ver serviços</a>
+</div>
+<div class="trust">
+<div><span class="stars">★★★★★</span><span><strong>5,0</strong> no Google</span></div>
+<div>⏱ <span><strong>Pontualidade</strong> no atendimento</span></div>
+<div>✨ <span><strong>Serviço limpo</strong></span></div>
+</div>
+</div>
+<div class="hero-img">
+<img src="https://images.unsplash.com/photo-1631545806609-35d4ae440431?auto=format&fit=crop&w=900&q=75" alt="Técnico instalando ar-condicionado">
+<div class="float-card"><div class="ic">🛠</div><div><strong>Instalação e manutenção preventiva</strong><br><span style="color:var(--muted)">Pra casa e pra empresa</span></div></div>
+</div>
+</div>
+</div>
+<section id="servicos">
+<div class="wrap">
+<span class="eyebrow">Serviços</span>
+<h2>Tudo pro seu ar funcionar bem o ano todo</h2>
+<p class="sub">Escolha o serviço e chama a gente no WhatsApp. A gente responde com o orçamento e o melhor horário pra você.</p>
+<div class="grid">
+<div class="svc"><div class="ic">🔧</div><h3>Instalação</h3><p>Instalação de split com acabamento caprichado, tubulação bem feita e tudo testado antes de ir embora.</p><a href="https://wa.me/5513991021229?text=Ol%C3%A1!%20Quero%20or%C3%A7amento%20de%20instala%C3%A7%C3%A3o." target="_blank" rel="noopener">Pedir orçamento →</a></div>
+<div class="svc"><div class="ic">🗓</div><h3>Manutenção preventiva</h3><p>Revisão periódica pra evitar defeito, manter o ar gelando bem e gastando menos energia.</p><a href="https://wa.me/5513991021229?text=Ol%C3%A1!%20Quero%20or%C3%A7amento%20de%20manuten%C3%A7%C3%A3o%20preventiva." target="_blank" rel="noopener">Pedir orçamento →</a></div>
+<div class="svc"><div class="ic">💧</div><h3>Limpeza e higienização</h3><p>Limpeza completa de filtros, serpentina e bandeja, tirando o mau cheiro e deixando o ar mais saudável.</p><a href="https://wa.me/5513991021229?text=Ol%C3%A1!%20Quero%20or%C3%A7amento%20de%20limpeza." target="_blank" rel="noopener">Pedir orçamento →</a></div>
+<div class="svc"><div class="ic">⚡</div><h3>Conserto</h3><p>Ar não gela, pinga água ou faz barulho? A gente avalia e explica o problema antes de qualquer serviço.</p><a href="https://wa.me/5513991021229?text=Ol%C3%A1!%20Meu%20ar%20est%C3%A1%20com%20problema." target="_blank" rel="noopener">Falar com um técnico →</a></div>
+<div class="svc"><div class="ic">📦</div><h3>Desinstalação e remanejamento</h3><p>Vai mudar de casa ou trocar o aparelho de lugar? A gente tira e reinstala com segurança.</p><a href="https://wa.me/5513991021229?text=Ol%C3%A1!%20Quero%20or%C3%A7amento%20de%20desinstala%C3%A7%C3%A3o." target="_blank" rel="noopener">Pedir orçamento →</a></div>
+<div class="svc"><div class="ic">🏢</div><h3>Empresas e comércios</h3><p>Atendimento pra lojas, escritórios e comércios, com contrato de manutenção se precisar.</p><a href="https://wa.me/5513991021229?text=Ol%C3%A1!%20Quero%20or%C3%A7amento%20para%20empresa." target="_blank" rel="noopener">Pedir orçamento →</a></div>
+</div>
+</div>
+</section>
+<section style="padding-top:0">
+<div class="wrap">
+<div class="why">
+<div>
+<span class="eyebrow">Por que a OusAr</span>
+<h2>O que os clientes mais falam da gente</h2>
+<p>Nas avaliações do Google, quem chamou a OusAr destaca sempre as mesmas coisas.</p>
+</div>
+<ul>
+<li><i>⏱</i><div><b>Pontualidade</b><span>Chega no horário combinado, sem você perder o dia esperando.</span></div></li>
+<li><i>🧼</i><div><b>Serviço limpo e bem feito</b><span>Profissionais cuidadosos com a sua casa e com o aparelho.</span></div></li>
+<li><i>💲</i><div><b>Preço justo</b><span>Orçamento claro antes de começar, sem surpresa no final.</span></div></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="como" style="padding-top:0">
+<div class="wrap">
+<span class="eyebrow">Como funciona</span>
+<h2>Simples do começo ao fim</h2>
+<div class="steps">
+<div class="step"><h3>Chama no WhatsApp</h3><p>Conta o que precisa e manda uma foto do aparelho ou do local, se puder.</p></div>
+<div class="step"><h3>Recebe o orçamento</h3><p>A gente responde com o valor e combina o melhor dia e horário pra você.</p></div>
+<div class="step"><h3>Serviço feito</h3><p>O técnico chega na hora, faz o serviço, testa tudo e deixa o lugar limpo.</p></div>
+</div>
+</div>
+</section>
+<section style="padding-top:0">
+<div class="wrap">
+<div class="reviews">
+<div class="score"><b>5,0</b><span class="stars">★★★★★</span><br><small>nota no Google</small></div>
+<div>
+<h2 style="margin-top:0">Quem contrata, recomenda</h2>
+<div class="chips"><span>Ótimo atendimento</span><span>Pontuais</span><span>Profissionais educados</span><span>Serviço limpo</span><span>Preço bom</span></div>
+<p class="sub" style="margin-top:14px"><a href="https://www.google.com/maps/place/OusAr+Ar+condicionados/@-23.9666499,-46.3887552,17z/data=!4m6!3m5!1s0x94ce1d40fb49b80f:0x379a6464676ae79e!8m2!3d-23.9666499!4d-46.3887552!16s%2Fg%2F11yp001j9t" target="_blank" rel="noopener" style="color:var(--blue);font-weight:600">Ler as avaliações no Google →</a></p>
+</div>
+</div>
+</div>
+</section>
+<section id="contato" style="padding-top:0">
+<div class="wrap">
+<span class="eyebrow">Contato</span>
+<h2>Atendemos São Vicente e região</h2>
+<div class="visit">
+<dl class="info">
+<dt>Endereço</dt><dd>R. Ipiranga, 87 · Centro<br>São Vicente - SP · CEP 11310-420</dd>
+<dt>WhatsApp</dt><dd><a href="https://wa.me/5513991021229" target="_blank" rel="noopener">(13) 99102-1229</a></dd>
+<dt>Horário</dt><dd>Atendimento 24 horas, todos os dias</dd>
+</dl>
+<div class="map"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=R.+Ipiranga,+87+-+Centro,+S%C3%A3o+Vicente+-+SP&output=embed" title="Mapa OusAr"></iframe></div>
+</div>
+</div>
+</section>
+<section style="padding-top:0">
+<div class="wrap">
+<div class="final">
+<h2>Calor não espera. Chama a OusAr.</h2>
+<p>Manda uma mensagem agora e recebe seu orçamento pelo WhatsApp.</p>
+<div class="cta"><a class="btn" href="https://wa.me/5513991021229?text=Ol%C3%A1!%20Vi%20o%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">Pedir orçamento</a></div>
+</div>
+</div>
+</section>
+</main>
+<footer>OusAr Ar Condicionados · São Vicente - SP</footer>
+<a class="fab" href="https://wa.me/5513991021229?text=Ol%C3%A1!%20Vi%20o%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 0 1-1.7-.6 13.3 13.3 0 0 1-5.1-4.5c-.4-.5-1-1.5-1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg></a>
+</body>
+                                                                                </html>
