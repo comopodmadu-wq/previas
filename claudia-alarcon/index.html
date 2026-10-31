@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claudia Alarcon Studio Hair · Alisamento e cuidado capilar em São Vicente</title>
+<meta name="description" content="Studio de beleza no Centro de São Vicente, especializado em alisamento. Atendimento individual, sem pressa, com a própria Claudia do início ao fim. Nota 5,0 no Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#26201f;--muted:#6e6461;--bg:#f8f4ef;--card:#fff;--plum:#6b3a4a;--plum-d:#4e2735;--gold:#b8925a;--line:#e8ded3;--wa:#1faa59}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.preview{background:var(--plum-d);color:#f3e7ea;font-size:13px;text-align:center;padding:8px 16px}
+header{position:sticky;top:0;z-index:10;background:rgba(248,244,239,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
+.logo{text-decoration:none;line-height:1.1}
+.logo b{display:block;font-family:Fraunces,serif;font-weight:500;font-size:24px;letter-spacing:.2px}
+.logo span{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:600}
+.nav ul{display:flex;gap:28px;list-style:none;font-size:14px;font-weight:500}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--wa);color:#fff;text-decoration:none;font-weight:600;padding:13px 22px;border-radius:999px;font-size:15px;transition:transform .15s;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn svg{width:18px;height:18px;fill:currentColor}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;padding-top:64px;padding-bottom:76px}
+.eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--plum);font-weight:700}
+h1{font-family:Fraunces,serif;font-weight:400;font-size:clamp(38px,5.6vw,62px);line-height:1.06;margin:14px 0 18px;letter-spacing:-.5px}
+h1 em{color:var(--plum);font-style:italic}
+.lead{color:var(--muted);font-size:17px;max-width:470px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 24px}
+.rating{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--muted);flex-wrap:wrap}
+.stars{color:var(--gold);letter-spacing:2px;font-size:16px}
+.rating b{color:var(--ink)}
+.hero-img{position:relative;aspect-ratio:4/5;border-radius:28px;overflow:visible}
+.hero-img img{width:100%;height:100%;object-fit:cover;border-radius:28px;display:block}
+.hero-img:before{content:"";position:absolute;inset:18px -18px -18px 18px;border:1.5px solid var(--gold);border-radius:28px;z-index:-1}
+.badge{position:absolute;left:-20px;bottom:30px;background:var(--card);border-radius:16px;padding:14px 18px;box-shadow:0 12px 30px rgba(38,32,31,.14);font-size:13px;max-width:210px}
+.badge b{display:block;font-family:Fraunces,serif;font-size:18px;font-weight:500;line-height:1.2;margin-bottom:2px}
+section{padding:76px 0}
+h2{font-family:Fraunces,serif;font-weight:400;font-size:clamp(30px,4.4vw,44px);line-height:1.1;margin:10px 0 14px;letter-spacing:-.3px}
+.sub{color:var(--muted);max-width:560px}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.pillar{border-top:2px solid var(--plum);padding-top:18px}
+.pillar h3{font-size:18px;margin-bottom:6px}
+.pillar p{color:var(--muted);font-size:15px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;display:flex;flex-direction:column}
+.svc.star{background:var(--plum);color:#fff;border-color:var(--plum)}
+.svc.star p{color:#ead9de}
+.svc.star a{color:#fff}
+.svc .tag{align-self:flex-start;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;background:rgba(255,255,255,.16);padding:4px 10px;border-radius:999px;margin-bottom:14px}
+.svc .ic{width:44px;height:44px;border-radius:12px;background:#f1e8ea;display:grid;place-items:center;font-size:20px;margin-bottom:14px}
+.svc h3{font-size:18px;margin-bottom:6px}
+.svc p{color:var(--muted);font-size:14px;flex:1}
+.svc a{display:inline-block;margin-top:14px;font-size:14px;font-weight:600;color:var(--plum);text-decoration:none}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:12px;margin-top:36px}
+.gallery div{border-radius:16px;overflow:hidden;background:var(--line)}
+.gallery div:nth-child(1){grid-row:span 2}
+.gallery div:nth-child(4){grid-column:span 2}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.gallery div:hover img{transform:scale(1.04)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px;counter-reset:s}
+.step{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px}
+.step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--plum);color:#fff;font-weight:700;margin-bottom:14px}
+.step h3{font-size:18px;margin-bottom:6px}
+.step p{color:var(--muted);font-size:14px}
+.proof{background:var(--ink);color:#f2ebe6;border-radius:28px;padding:56px}
+.proof-top{display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-bottom:34px}
+.proof .big{font-family:Fraunces,serif;font-size:88px;line-height:.9}
+.proof .big small{display:block;font-family:"DM Sans";font-size:14px;color:var(--gold);letter-spacing:2px;margin-top:8px}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.q{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:22px;font-family:Fraunces,serif;font-size:17px;line-height:1.45}
+.q span{display:block;font-family:"DM Sans";font-size:12px;color:#bfb2ac;margin-top:12px;letter-spacing:1px}
+.proof a{color:#fff;font-weight:600}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:36px}
+.info{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:30px}
+.info dt{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--plum);font-weight:700;margin-top:18px}
+.info dt:first-child{margin-top:0}
+.info dd{font-size:16px}
+.hours{display:grid;grid-template-columns:auto 1fr;gap:2px 16px;font-size:15px}
+.map{border-radius:20px;overflow:hidden;min-height:340px;border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:340px;border:0}
+.final{text-align:center}
+.final .cta{justify-content:center}
+footer{border-top:1px solid var(--line);padding:28px 0 90px;font-size:13px;color:var(--muted);text-align:center}
+.float{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 8px 24px rgba(31,170,89,.4);z-index:20}
+.float svg{width:30px;height:30px;fill:#fff}
+@media(max-width:860px){
+.nav ul{display:none}
+.logo b{font-size:20px}.logo span{letter-spacing:1.5px;font-size:9px}
+.nav .btn{padding:10px 16px;font-size:14px}
+.hero{grid-template-columns:1fr;padding-top:36px;padding-bottom:56px;gap:40px}
+.hero-img{max-width:400px;margin:0 auto;width:calc(100% - 18px)}
+.badge{left:10px}
+.pillars,.services,.steps,.quotes{grid-template-columns:1fr}
+.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}
+.gallery div:nth-child(4){grid-column:span 1}
+.proof{padding:34px 24px}
+.proof .big{font-size:70px}
+.visit{grid-template-columns:1fr}
+section{padding:54px 0}
+}
+</style>
+</head>
+<body>
+<div class="preview">Prévia do site · fotos ilustrativas, que serão trocadas pelas fotos reais do studio</div>
+<header>
+<div class="wrap nav">
+<a class="logo" href="#"><b>Claudia Alarcon</b><span>Studio Hair · São Vicente</span></a>
+<ul>
+<li><a href="#servicos">Serviços</a></li>
+<li><a href="#trabalhos">Trabalhos</a></li>
+<li><a href="#visite">Como chegar</a></li>
+</ul>
+<a class="btn" href="https://wa.me/5513974075295?text=Ol%C3%A1%20Claudia!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 0 1-1.7-.6 13.3 13.3 0 0 1-5.1-4.5c-.4-.5-1-1.5-1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg>Agendar</a>
+</div>
+</header>
+<main>
+<div class="wrap hero">
+<div>
+<span class="eyebrow">Especialista em alisamento · Centro de São Vicente</span>
+<h1>Seu cabelo cuidado <em>do começo ao fim</em> pelas mesmas mãos.</h1>
+<p class="lead">Um studio só seu, sem correria. A Claudia escuta o que te incomoda no cabelo, monta um cuidado sob medida e prefere fórmulas mais leves e menos agressivas pros seus fios.</p>
+<div class="cta">
+<a class="btn" href="https://wa.me/5513974075295?text=Ol%C3%A1%20Claudia!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 0 1-1.7-.6 13.3 13.3 0 0 1-5.1-4.5c-.4-.5-1-1.5-1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg>Agendar pelo WhatsApp</a>
+<a class="btn ghost" href="#servicos">Ver serviços</a>
+</div>
+<div class="rating"><span class="stars">★★★★★</span><span><b>5,0</b> no Google · todas as avaliações com nota máxima</span></div>
+</div>
+<div class="hero-img">
+<img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=75" alt="Cabelo liso e brilhante">
+<div class="badge"><b>Atendimento individual</b>Uma cliente por vez, com hora marcada</div>
+</div>
+</div>
+<section style="padding-top:0">
+<div class="wrap">
+<span class="eyebrow">Por que o studio</span>
+<h2>Cuidado de verdade, sem pressa</h2>
+<div class="pillars">
+<div class="pillar"><h3>Ela mesma te atende</h3><p>Do diagnóstico à finalização é a Claudia que cuida do seu cabelo. Nada de passar de mão em mão.</p></div>
+<div class="pillar"><h3>Fórmulas mais leves</h3><p>Prioridade pra produtos e técnicas menos invasivas, pensando na saúde dos fios a longo prazo.</p></div>
+<div class="pillar"><h3>Cuidado sob medida</h3><p>Cada cabelo ganha um plano próprio, de acordo com o que você quer e com o que seu fio aguenta.</p></div>
+</div>
+</div>
+</section>
+<section id="servicos" style="padding-top:0">
+<div class="wrap">
+<span class="eyebrow">Serviços</span>
+<h2>O que você encontra aqui</h2>
+<p class="sub">Escolha o serviço e chame no WhatsApp. A Claudia responde com valores e os horários livres da semana.</p>
+<div class="services">
+<div class="svc star"><span class="tag">Especialidade</span><h3>Alisamento e progressiva</h3><p>Liso, alinhado e com brilho, com avaliação do seu fio antes e a fórmula certa pro seu tipo de cabelo.</p><a href="https://wa.me/5513974075295?text=Ol%C3%A1%20Claudia!%20Quero%20saber%20sobre%20alisamento%20e%20progressiva." target="_blank" rel="noopener">Consultar valores →</a></div>
+<div class="svc"><div class="ic">🗓️</div><h3>Cronograma capilar</h3><p>Um plano de tratamento só seu, pensado a partir das suas queixas e da rotina do seu cabelo.</p><a href="https://wa.me/5513974075295?text=Ol%C3%A1%20Claudia!%20Quero%20saber%20sobre%20cronograma%20capilar." target="_blank" rel="noopener">Consultar valores →</a></div>
+<div class="svc"><div class="ic">💧</div><h3>Tratamentos</h3><p>Hidratação, nutrição e reconstrução pra devolver maciez, força e brilho aos fios.</p><a href="https://wa.me/5513974075295?text=Ol%C3%A1%20Claudia!%20Quero%20saber%20sobre%20tratamentos." target="_blank" rel="noopener">Consultar valores →</a></div>
+<div class="svc"><div class="ic">✂️</div><h3>Corte</h3><p>Corte feito com calma, tirando só o que você pediu. Também fazemos corte pra doação.</p><a href="https://wa.me/5513974075295?text=Ol%C3%A1%20Claudia!%20Quero%20saber%20sobre%20corte." target="_blank" rel="noopener">Consultar valores →</a></div>
+<div class="svc"><div class="ic">✨</div><h3>Escova e finalização</h3><p>Pro dia a dia ou pra uma ocasião especial, com acabamento caprichado.</p><a href="https://wa.me/5513974075295?text=Ol%C3%A1%20Claudia!%20Quero%20saber%20sobre%20escova." target="_blank" rel="noopener">Consultar valores →</a></div>
+<div class="svc"><div class="ic">💅</div><h3>Unhas</h3><p>Mãos e pés feitos com cuidado, pra sair do studio completa.</p><a href="https://wa.me/5513974075295?text=Ol%C3%A1%20Claudia!%20Quero%20saber%20sobre%20unhas." target="_blank" rel="noopener">Consultar valores →</a></div>
+</div>
+</div>
+</section>
+<section id="trabalhos" style="padding-top:0">
+<div class="wrap">
+<span class="eyebrow">Trabalhos</span>
+<h2>Alguns resultados</h2>
+<p class="sub">Todos os serviços num lugar só, sem precisar pedir foto por foto no WhatsApp.</p>
+<div class="gallery">
+<div><img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=700&q=70" alt="Cabelo finalizado" loading="lazy"></div>
+<div><img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=600&q=70" alt="Atendimento" loading="lazy"></div>
+<div><img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=70" alt="Escova" loading="lazy"></div>
+<div><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=70" alt="Ambiente do studio" loading="lazy"></div>
+<div><img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&w=600&q=70" alt="Cabelo liso" loading="lazy"></div>
+<div><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=70" alt="Unhas" loading="lazy"></div>
+</div>
+</div>
+</section>
+<section style="padding-top:0">
+<div class="wrap">
+<span class="eyebrow">Como funciona</span>
+<h2>Do primeiro oi até o cabelo pronto</h2>
+<div class="steps">
+<div class="step"><h3>Conta o que você quer</h3><p>Chama no WhatsApp, fala do seu cabelo e do resultado que você imagina.</p></div>
+<div class="step"><h3>Avaliação e plano</h3><p>A Claudia olha seu fio e indica o melhor caminho, sem empurrar o que você não precisa.</p></div>
+<div class="step"><h3>Seu horário, só seu</h3><p>Atendimento individual, com calma, num ambiente tranquilo no Centro de São Vicente.</p></div>
+</div>
+</div>
+</section>
+<section style="padding-top:0">
+<div class="wrap">
+<div class="proof">
+<div class="proof-top">
+<div class="big">5,0<small>★★★★★ NO GOOGLE</small></div>
+<div><h2 style="color:#fff;margin:0">O que as clientes dizem</h2></div>
+</div>
+<div class="quotes">
+<div class="q">“Ouve suas queixas e elabora um cronograma individualizado. Não tem pressa em te atender.”<span>AVALIAÇÃO NO GOOGLE</span></div>
+<div class="q">“Cortou somente o que eu pedi, nada além. Fiquei encantada.”<span>AVALIAÇÃO NO GOOGLE</span></div>
+<div class="q">“Ambiente calmo e execução do trabalho excelente. Com certeza volto!”<span>AVALIAÇÃO NO GOOGLE</span></div>
+</div>
+<p style="margin-top:26px"><a href="https://www.google.com/maps/search/?api=1&query=Claudia%20Alarcon%20Sal%C3%A3o%20de%20Beleza%20S%C3%A3o%20Vicente&query_place_id=ChIJ6dwOKJAbzpQRRDv4dkbOI0Y" target="_blank" rel="noopener">Ler todas as avaliações no Google →</a></p>
+</div>
+</div>
+</section>
+<section id="visite" style="padding-top:0">
+<div class="wrap">
+<span class="eyebrow">Visite</span>
+<h2>Como chegar</h2>
+<div class="visit">
+<dl class="info">
+<dt>Endereço</dt><dd>R. Benjamin Constant, 61<br>Sala 2405, 24º andar<br>Centro, São Vicente - SP · CEP 11310-500</dd>
+<dt>WhatsApp</dt><dd><a href="https://wa.me/5513974075295" target="_blank" rel="noopener">(13) 97407-5295</a></dd>
+<dt>Horários</dt><dd><div class="hours"><span>Quarta e quinta</span><span>10h às 18h</span><span>Sexta e sábado</span><span>9h às 19h</span><span>Dom, seg e ter</span><span>Fechado</span></div></dd>
+</dl>
+<div class="map"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=R.+Benjamin+Constant,+61+-+Centro,+S%C3%A3o+Vicente+-+SP&output=embed" title="Mapa do studio"></iframe></div>
+</div>
+</div>
+</section>
+<section class="final" style="padding-top:0">
+<div class="wrap">
+<h2>Vamos cuidar do seu cabelo?</h2>
+<p class="sub" style="margin:0 auto">Chama no WhatsApp e conta o que você quer fazer.</p>
+<div class="cta"><a class="btn" href="https://wa.me/5513974075295?text=Ol%C3%A1%20Claudia!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar pelo WhatsApp</a></div>
+</div>
+</section>
+</main>
+<footer>Claudia Alarcon Studio Hair · Centro, São Vicente - SP</footer>
+<a class="float" href="https://wa.me/5513974075295?text=Ol%C3%A1%20Claudia!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 0 1-1.7-.6 13.3 13.3 0 0 1-5.1-4.5c-.4-.5-1-1.5-1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg></a>
+</body>
+  </html>
